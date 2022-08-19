@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="310.0" prefWidth="308.0" spacing="20.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.calculadora.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <children>
+      <AnchorPane prefHeight="275.0" prefWidth="282.0">
+         <children>
+            <Button fx:id="btn_1" layoutX="26.0" layoutY="55.0" mnemonicParsing="false" onAction="#btn1" text="1" />
+            <Button fx:id="btn_2" layoutX="62.0" layoutY="55.0" mnemonicParsing="false" onAction="#btn2" text="2" />
+            <Button layoutX="136.0" layoutY="54.0" mnemonicParsing="false" onAction="#suma" text="+">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <TextField fx:id="txtResultado" editable="false" layoutX="26.0" layoutY="14.0" prefHeight="25.0" prefWidth="202.0" />
+            <Button layoutX="198.0" layoutY="131.0" mnemonicParsing="false" onAction="#igual" prefHeight="32.0" prefWidth="40.0" text="=">
+               <font>
+                  <Font name="Arial Narrow" size="16.0" />
+               </font>
+            </Button>
+            <Button layoutX="62.0" layoutY="167.0" mnemonicParsing="false" onAction="#btn0" text="0" />
+            <Button layoutX="135.0" layoutY="131.0" mnemonicParsing="false" onAction="#multiplicacion" prefHeight="31.0" prefWidth="31.0" text="*">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button layoutX="98.0" layoutY="55.0" mnemonicParsing="false" onAction="#btn3" text="3" />
+            <Button layoutX="26.0" layoutY="96.0" mnemonicParsing="false" onAction="#btn4" text="4" />
+            <Button layoutX="62.0" layoutY="96.0" mnemonicParsing="false" onAction="#btn5" text="5" />
+            <Button layoutX="98.0" layoutY="96.0" mnemonicParsing="false" onAction="#btn6" text="6" />
+            <Button layoutX="26.0" layoutY="136.0" mnemonicParsing="false" onAction="#btn7" text="7" />
+            <Button layoutX="62.0" layoutY="136.0" mnemonicParsing="false" onAction="#btn8" text="8" />
+            <Button layoutX="98.0" layoutY="136.0" mnemonicParsing="false" onAction="#btn9" text="9" />
+            <Button layoutX="135.0" layoutY="167.0" mnemonicParsing="false" onAction="#division" text="÷">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button layoutX="191.0" layoutY="81.0" mnemonicParsing="false" onAction="#borrar" text="DELETE" />
+            <Button layoutX="135.0" layoutY="91.0" mnemonicParsing="false" onAction="#resta" prefHeight="30.0" prefWidth="31.0" text="-">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="50.0" layoutY="210.0" mnemonicParsing="false" onAction="#creador" prefHeight="32.0" prefWidth="120.0" text="Mostrar Creador">
+               <font>
+                  <Font name="Arial Narrow" size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>
